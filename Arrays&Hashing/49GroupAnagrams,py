@@ -1,0 +1,17 @@
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        
+        resultList = defaultdict(list)
+        
+        for s in strs:
+            charCount = [0] * 26
+            
+            for ch in s:
+                charCount[ord(ch) - ord("a")] += 1
+                
+            resultList[tuple (charCount)].append(s)
+            
+        return resultList.values()
+                
+            
+            
