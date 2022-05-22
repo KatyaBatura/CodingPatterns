@@ -5,7 +5,9 @@
         2. We compare the length of the 2 strings, as if they are the same,we only need to iterate through one of the hashmaps ie, we can assume there are no extra char in the second string
         
         Time Complexity        O(s+t)              
-        Space Complexity       O(s+t)       
+        Space Complexity       O(s+t) 
+        
+        Btw, if we have a sorted string, we would just need to compare if they are equal as they would be the same, the time complxity of sorting could be O(nlog(n))
         
 """
 
