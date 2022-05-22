@@ -8,6 +8,7 @@
         Space Complexity       O(s+t) 
         
         Btw, if we have a sorted string, we would just need to compare if they are equal as they would be the same, the time complxity of sorting could be O(nlog(n))
+        return sorted(s) == sorted(t)
         
 """
 
